@@ -1,0 +1,49 @@
+{
+    "name": "vio/language-change-default",
+    "version": "1.0.0",
+    "description": "",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vio\\LanguageChangeDefault\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VIOSYS AG",
+            "homepage": "https://www.viosys.de"
+        },
+        {
+            "email": "skoenig@viosys.com",
+            "name": "Sebastian König",
+            "homepage": "https://www.viosys.de",
+            "role": "dev"
+        },
+        {
+            "email": "fhilbert@viosys.com",
+            "name": "Falko Hilbert",
+            "homepage": "https://www.viosys.de",
+            "role": "dev"
+        }
+    ],
+    "extra": {
+        "shopware-plugin-class": "Vio\\LanguageChangeDefault\\VioLanguageChangeDefault",
+        "label": {
+            "de-DE": "VIO.Standardsprache \u00e4ndern",
+            "en-GB": "VIO.change default language"
+        },
+        "description": {
+            "de-DE": "Plugin um die Standardsprache zu \u00e4ndern",
+            "en-GB": "plugin to change the default language"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://www.viosys.de",
+            "en-GB": "https://www.viosys.de"
+        },
+        "supportLink": {
+            "de-DE": "https://www.viosys.de/kontakt",
+            "en-GB": "https://www.viosys.de/kontakt"
+        }
+    }
+}
