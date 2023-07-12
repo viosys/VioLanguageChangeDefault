@@ -12,7 +12,7 @@ use RuntimeException;
 use Shopware\Core\Defaults;
 use Shopware\Core\Framework\Api\Context\SystemSource;
 use Shopware\Core\Framework\Context;
-use Shopware\Core\Framework\DataAbstractionLayer\EntityRepositoryInterface;
+use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Sorting\FieldSorting;
@@ -36,15 +36,15 @@ class LanguageChangeDefaultCommand extends Command
 {
     protected static $defaultName = 'vio:language:change-default';
 
-    private EntityRepositoryInterface $localeRepository;
+    private EntityRepository $localeRepository;
 
-    private EntityRepositoryInterface $languageRepository;
+    private EntityRepository $languageRepository;
 
     private Connection $connection;
 
     public function __construct(
-        EntityRepositoryInterface $localeRepository,
-        EntityRepositoryInterface $languageRepository,
+        EntityRepository $localeRepository,
+        EntityRepository $languageRepository,
         Connection $connection
     ) {
         parent::__construct();
